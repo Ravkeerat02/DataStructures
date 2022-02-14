@@ -1,0 +1,83 @@
+
+
+
+public class Node {
+    public int data;
+    public Node next;
+    
+    public Node (int data){
+        this.data=data;
+        this.next=null;
+    }
+}
+
+
+public class LinkedList {
+    private Node head;
+    
+    public LinkedList(){
+        head=null;
+    }
+    
+    public void addFront(int item){
+        Node newNode = new Node(item); // step 1
+        newNode.next=head;             // step 2
+        head=newNode;                  // step 3
+    }
+    
+    public void addLast(int item){
+        Node newNode = new Node(item);       
+        if (head==null){   // case 1
+            head=newNode;
+            return;
+        }
+        Node curr=head;     //cases 2 and 3
+        while(curr.next!=null){
+            curr=curr.next;
+        }
+        curr.next=newNode;
+    }
+    
+    public void addInOrderAsc(int item){
+        Node newNode = new Node(item);  
+        if (head==null || head.data>item){ //add Front
+            newNode.next=head;
+            head=newNode;
+            return;
+        }
+        
+        Node curr,prev;
+        curr=prev=head;    
+        while(curr!=null && curr.data<item){
+            prev=curr;
+            curr=curr.next;
+        }
+        newNode.next=curr;
+        prev.next=newNode;    
+    } 
+    
+    public String printList(){
+        String s="List: ";
+        Node curr= head;
+        while (curr!=null){
+            s+=curr.data+" ";
+            curr=curr.next;
+        }
+        return s;
+    }
+}
+
+
+
+public static void main(String[] args) {
+        LinkedList ll = new LinkedList();
+        ll.addInOrderAsc(7);
+        ll.addInOrderAsc(5);
+        ll.addInOrderAsc(1);
+        ll.addInOrderAsc(2);
+        ll.addInOrderAsc(3);
+        ll.addInOrderAsc(3);
+        ll.addInOrderAsc(9);
+        ll.addInOrderAsc(8);
+        System.out.println(ll.printList());
+    }
