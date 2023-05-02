@@ -20,11 +20,11 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
 
-  git clone https://github.com/Ravkeerat02/DataStructures.git
+    git clone https://github.com/Ravkeerat02/DataStructures.git
 
 2. Navigate to the directory of the desired data structure:
 
-  `cd DataStructures/<data-structure>`
+    `cd DataStructures/<data-structure>`
 
 
 3. Compile and run the code.
