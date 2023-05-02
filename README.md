@@ -1,53 +1,30 @@
 # DataStructures
-# DataStructures
 
-This repository contains the implementation of various data structures in Java.
+This repository contains code for common data structures implemented in various programming languages.
 
-## Data Structures Implemented
+## Available Data Structures
 
-The following data structures have been implemented in this repository:
+The following data structures are currently available in this repository:
 
-- Linked List
-- Stack
-- Queue
-- Binary Search Tree
-- AVL Tree
-- Hash Table
-- Graph
-
-Each data structure is implemented in a separate Java class with methods for various operations.
+- Arrays
+- Linked Lists
+- Stacks
+- Queues
+- Trees
+- Graphs
+- Hash Tables
 
 ## Getting Started
 
-To use the data structures implemented in this repository, follow these steps:
+To get started with this project, follow these steps:
 
-1. Clone this repository using the following command: git clone https://github.com/Ravkeerat02/DataStructures.git
+1. Clone the repository:
 
+  git clone https://github.com/Ravkeerat02/DataStructures.git
 
-2. Open the repository in your preferred Java IDE.
+2. Navigate to the directory of the desired data structure:
 
-3. Navigate to the class of the data structure you want to use.
-
-4. Create an instance of the data structure.
-
-5. Use the methods of the data structure to perform various operations.
-
-## Contributing
-
-Contributions to this repository are welcome. If you want to contribute, follow these steps:
-
-1. Fork this repository.
-
-2. Create a new branch with a descriptive name for your contribution.
-
-3. Make your changes and commit them to your branch.
-
-4. Push your changes to your forked repository.
-
-5. Create a pull request from your branch to the main repository.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+  `cd DataStructures/<data-structure>`
 
 
+3. Compile and run the code.
